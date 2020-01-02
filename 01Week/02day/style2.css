@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: 'Consolas', courier;
+}
+
+.head {
+    background-color: #333333;
+    overflow: hidden;
+    text-align: right;
+    line-height: 3;
+}
+img#logo {
+    float: left;
+    margin: 10px 0 0 10%;
+}
+.main {
+    padding: 1% 10%;
+}
+#wiki {
+    padding: 0% 10%;
+}
+.link {
+    margin: 0 25px 0 0;
+    color: #ff0099;
+}
+.linkedin {
+    margin: 0 10% 0 0;
+    color: #ff0099;
+}
+.separator {
+    text-align: center
+}
+h3 {
+    text-align: center;
+    font-size: 28px;
+}
+h2.test {
+    color: #ff0099;
+    font-size: 20px;
+}
+h2.answer {
+    font-size: 20px;
+}
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+}

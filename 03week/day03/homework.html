@@ -1,0 +1,50 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8" />
+    <title>Canvas</title>
+</head>
+<body>
+    <!--Y AXIS IS INVERTED IN CANVAS!!!!!!! (top left pixel is 0,0)-->
+    <canvas id='canvas' style="border: 1px solid; width: 800px; height: 600px;">
+        Sorry, your browser does not support the canvas tag. 
+    </canvas>
+
+    <script>
+    
+    //Cache a reference to the html element
+    var canvas = document.getElementById('canvas');
+    canvas.width = canvas.scrollWidth; //scrollWidth: gives the actual size set by css of the html element
+    canvas.height = canvas.scrollHeight;
+    var ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = 'green'; //change the color of the rectangle to green    
+    ctx.fillRect(50, 50, 100, 100); //ctx.fillRect(x, y, width, height);
+
+    ctx.strokeStyle = 'red'; 
+    ctx.strokeRect(200, 50, 100, 100); //(x, y, width, height)
+
+    //circles uses radian insted of degrees. formula: 
+    //radian = degrees * (pi/180)
+    //degrees = radian * (180/pi)
+
+    ctx.fillStyle = 'blue';
+    ctx.beginPath();
+    ctx.arc(400, 100, 50, 0, Math.PI * 2);  // ctx.arc(x, y (midpoint), radius (start and end point), )
+    ctx.fill();
+
+    ctx.strokeStyle = 'purple';
+    ctx.beginPath();
+    ctx.arc(550, 100, 50, 0, Math.PI * 2);  // ctx.arc(x, y (midpoint), radius (start and end point), )
+    ctx.stroke();
+
+    ctx.fillStyle = 'pink';
+    ctx.beginPath();
+    ctx.arc(700, 100, 50, 0, Math.PI / 2);  // ctx.arc(x, y (midpoint), radius (start and end point), )
+    ctx.lineTo(700, 100);
+    ctx.fill();
+
+    </script>
+    
+</body>
+</html>

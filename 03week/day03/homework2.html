@@ -1,0 +1,52 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8" />
+    <title>Canvas</title>
+</head>
+<body>
+    <!--Y AXIS IS INVERTED IN CANVAS!!!!!!! (top left pixel is 0,0)-->
+    <canvas id='canvas' style="border: 1px solid; width: 800px; height: 600px;">
+        Sorry, your browser does not support the canvas tag. 
+    </canvas>
+
+    <script>
+    
+    //Cache a reference to the html element
+    var canvas = document.getElementById('canvas');
+    canvas.width = canvas.scrollWidth; //scrollWidth: gives the actual size set by css of the html element
+    canvas.height = canvas.scrollHeight;
+    var ctx = canvas.getContext('2d');
+
+    // Draw a path which is outlined
+    ctx.beginPath();
+    ctx.moveTo(100, 100);
+    ctx.lineTo(200, 100);
+    ctx.moveTo(100, 200);
+    ctx.lineTo( 50, 100);
+
+    ctx.strokeStyle = 'green';
+    ctx.stroke();
+
+    // Draw a path which is outlined
+    ctx.beginPath();
+    ctx.moveTo(400, 100);
+    ctx.lineTo(500, 100);
+    ctx.lineTo(400, 200);
+    ctx.lineTo(350, 100);
+
+    ctx.fillStyle = 'green';
+    ctx.fill();
+
+    //Circle
+    ctx.fillStyle = 'green';
+    ctx.beginPath();
+    ctx.arc(650, 150, 50, 0, Math.PI / 2);  // ctx.arc(x, y (midpoint), radius (start and end point), )
+    ctx.lineTo(650, 150);
+    ctx.fill();
+
+
+    </script>
+    
+</body>
+</html>

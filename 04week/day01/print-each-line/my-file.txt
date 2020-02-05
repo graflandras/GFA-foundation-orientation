@@ -1,0 +1,3 @@
+This is my txt file for the task 'print-each-line'. 
+I have a few lines of text in this file. 
+My task is to write a program which read this file and then prints it's lines. 

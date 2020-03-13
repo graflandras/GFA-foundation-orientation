@@ -1,0 +1,40 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    background: purple;
+    height: 60px;
+    display: flex;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+nav li {
+    background-color: aqua;
+    display: block;
+    margin: 0 20px;
+    width: 13%;
+}
+
+.content {
+    display: flex;
+}
+
+.yellow {
+    background-color: yellow;
+    height: 600px;
+    width: 65%;
+}
+
+.green {
+    background-color: green;
+    height: 600px;
+    width: 35%;
+}

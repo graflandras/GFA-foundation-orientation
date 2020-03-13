@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    background: purple;
+    height: 60px;
+    display: flex;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+nav li {
+    background-color: aqua;
+    display: block;
+    margin: 0 20px;
+    width: 13%;
+}
+
+.content {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.yellow {
+    order: 2;
+    background-color: yellow;
+    height: 600px;
+    width: 65%;
+    margin: 10px 0 10px 0;
+}
+
+.green {
+    background-color: green;
+    height: 600px;
+    width: 35%;
+    margin: 10px 10px 10px 0;
+}
+.footer {
+    display: flex;
+    background-color: gray;
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+}

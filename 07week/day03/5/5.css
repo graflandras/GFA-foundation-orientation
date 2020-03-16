@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+}
+
+.header {
+    background: aqua;
+    height: 100px;
+    display: flex;
+    
+}
+
+.content {
+    display: flex;
+}
+
+.red {
+    display: flex; /*azért, hogy a fekete dobozt tudjuk mozgatni*/
+    background-color: red;
+    height: 600px;
+    width: 65%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.blackbox {
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    margin: 0 15px 15px 0;
+}
+
+.orange {
+    background-color: orange;
+    height: 600px;
+    width: 35%;
+    margin: 0 10px 0 0;
+}
+.purple {
+    background-color: purple;
+    height: 600px;
+    width: 35%;
+    margin: 0 0 0 10px;
+}
+.footer {
+    display: flex;
+    background-color: blue;
+    height: 100px;
+}

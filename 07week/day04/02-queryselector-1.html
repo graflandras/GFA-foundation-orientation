@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop: QuerySelector</title>
+</head>
+
+<body>
+  <section class="container">
+    <div id="b325" class="asteroid">The King</div>
+    <div class="asteroid b326">The Conceited Man</div>
+  </section>
+  <p class="asteroid big">The Businessman</p>
+  <div class="asteroid b329 big">The Lamplighter</div>
+
+  <!-- You can work in the html or in a separate js file. Like:-->
+
+  <script>
+    /*1. store the element that says 'The King' in the 'king' variable.
+    console.log it.*/
+
+    const king = document.querySelector('#b325'); //id a unique
+    console.log(king.innerHTML);
+    console.log(king.textContent);
+
+    /*2. store 'The Businessman' and 'The Lamplighter'
+    in the 'businessLamp' variable.
+    console.log each of them.*/
+
+    const businessLamp = document.querySelectorAll('.big'); //classnévben csak ennél a kettőnél van big
+
+    businessLamp.forEach(e => {
+      console.log(e);
+      console.log(e.textContent);
+    });
+
+    /*3. store 'The King' and 'The Conceited Man'
+    in the 'conceitedKing' variable.
+    alert them one by one.*/
+
+    const conceitedKing = document.querySelectorAll('.container div');
+
+    for (i = 0; i < conceitedKing.length; i++) {
+      alert(conceitedKing[i].innerHTML);
+    };
+
+    //VAGY
+
+    const conceitedKing2 = document.querySelectorAll('.container .asteroid'); //container classon belüli asteroid-ot tartalmazó classok, szóköz kell közéjük 
+    conceitedKing2.forEach(e => {
+      alert(e.textContent);
+    });
+
+    /*4. store 'The King', 'The Conceited Man' and 'The Lamplighter'
+    in the 'noBusiness' variable.
+    console.log each of them.*/
+
+    const noBusiness = document.querySelectorAll('div.asteroid'); //egy elemre hivatkozunk, nem kell szóköz
+    for (i = 0; i < noBusiness.length; i++) {
+      console.log(noBusiness[i].textContent);
+    }  
+  </script>
+</body>
+
+</html>

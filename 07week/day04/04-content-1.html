@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Workshop: innerHTML, textContent</title>
+  </head>
+  <body>
+    <p class="apple">apple</p>
+    <p class="balloon">banana</p>
+    <p class="cat">car</p>
+    <p class="animals">goat rabbit <strong>cat</strong> dog</p>
+
+    <!-- You can work in the html or in a separate js file. -->
+    <script>
+    /*1)  Fill every paragraph with the last one's content.*/
+
+    const animals = document.querySelector('.animals');
+    const array = document.querySelectorAll('p');
+        array.forEach(e => {
+            e.innerText = animals.innerText;
+        });
+        //VAGY EGYIK VAGY MÁSIK MŰKÖDIK 
+
+    /*2)  Do the same again, but you should keep the cat strong.*/
+    const animals2 = document.querySelector('.animals');
+    const array2 = document.querySelectorAll('p');
+        array2.forEach(e => {
+            e.innerHTML = animals2.innerHTML;
+        });
+
+    </script>
+  </body>
+</html>

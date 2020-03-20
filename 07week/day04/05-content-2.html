@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Workshop: innerHTML, textContent</title>
+    <style>
+        .colored {
+            background-color: limegreen;
+        }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>placeholder</li>
+      <li>placeholder</li>
+      <li>placeholder</li>
+      <li>placeholder</li>
+    </ul>
+
+    <!-- You can work in the html or in a separate js file.-->
+    <script>
+      /*1) replace the list items' content with items from this list:
+      ['apple', 'banana', 'cat', 'dog']*/
+    'use strict';
+
+    const array = ['apple', 'banana', 'cat', 'dog'];
+    const originalList = document.querySelectorAll('li');
+    
+    for (let i = 0; i < originalList.length; i++){
+        originalList[i].innerText = array[i];
+    }
+
+      /*2) change the <ul> element's background color to 'limegreen'
+        - use css class to change the color instead of the style property*/
+    //const ulTag = document.querySelector('ul');    ez is jó megoldás ha nem css-sel kell csinálni
+    //ulTag.style.backgroundColor = 'limegreen';    ez is jó megoldás ha nem css-sel kell csinálni
+    
+    const array2 = document.querySelector('ul'); 
+    array2.classList.add('colored');    //css-ben .colored
+
+    </script>
+  </body>
+</html>

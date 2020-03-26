@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM: Create, Insert, Remove</title>
+</head>
+<body>
+  <ul class="asteroids">
+    <li class="asteroid">The King</li>
+    <li class="asteroid b326">The Conceited Man</li>
+    <li class="asteroid b328">The Businessman</li>
+    <li class="asteroid b329">The Lamplighter</li>
+  </ul>
+
+  <script>
+    'use strict';
+    var asteroidList = document.querySelector('ul.asteroids'); //az asteroid class-u ul-eket kapja el
+    var newAsteroid = document.createElement('li'); //létrehoz egy új <li> tagot
+    newAsteroid.id = 'b555'; //az új <li> tag id-ját definiálja <li id='b555'>-re
+    newAsteroid.textContent = 'The Green Fox';
+    asteroidList.appendChild(newAsteroid); //az eredeti listához hozzácsatolja a newAsteroid <li> tagot
+    var businessAsteroid = document.querySelector('.b328'); 
+    asteroidList.removeChild(businessAsteroid); //ezt meg törli 
+  </script>
+</body>
+</html>

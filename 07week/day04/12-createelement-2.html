@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Workshop: CreateElement</title>
+  </head>
+  <body>
+    <ul class="asteroids">
+      <li>The King</li>
+    </ul>
+
+    <script>
+      //Remove the king from the list.
+      let list = document.querySelector('ul');
+      let removeKing = document.querySelector('li');
+      list.removeChild(removeKing);
+
+      const planetData = [
+        {
+          category: 'inhabited',
+          content: 'Foxes',
+          asteroid: true,
+        },
+        {
+          category: 'inhabited',
+          content: 'Whales and Rabbits',
+          asteroid: true,
+        },
+        {
+          category: 'uninhabited',
+          content: 'Baobabs and Roses',
+          asteroid: true,
+        },
+        {
+          category: 'inhabited',
+          content: 'Giant monsters',
+          asteroid: false,
+        },
+        {
+          category: 'inhabited',
+          content: 'Sheep',
+          asteroid: true,
+        },
+      ];
+      //Fill the list based on the following list of objects.
+      //Only add the asteroids to the list.
+      //Each list item should have its category as a class and its content as text content.
+      for (let i = 0; i < planetData.length; i++){
+          let addnewTag = document.createElement('li'); 
+
+          if(planetData[i].asteroid === true) {
+            addnewTag.setAttribute('class', `${planetData[i].category}`); //classnak megadjuk a category-t
+            addnewTag.innerText = planetData[i].content; //innertextnek megadjuk a content-et
+            list.appendChild(addnewTag); //hozzáadjuk a listához
+          }
+      }
+    </script>
+  </body>
+</html>

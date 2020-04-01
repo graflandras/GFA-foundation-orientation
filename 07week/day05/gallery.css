@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 1391px;
+    background: linear-gradient(to bottom, #b5bdc8 0%,#828c95 36%,#28343b 100%); 
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    width: 65%;
+    height: 75%;
+    align-content: center;
+    margin: 60px 0 30px 0;
+}
+
+.description {
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    opacity: 0.6;
+    position: absolute; 
+    bottom: 0px;
+    overflow: auto;
+}
+
+.right {
+    width: 5%;
+    background-image: url(src/arrowleft.png);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: linear-gradient(135deg, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    opacity: 0.3;
+}
+
+.left {
+    width: 5%;
+    background-image: url(src/arrowleft.png);
+    background-repeat: no-repeat;
+    background-color: darkgrey;
+    background-position: center;
+    background-color: linear-gradient(135deg, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    opacity: 0.3;
+}
+
+.buttons {
+    display: flex;
+    width: 55%;
+    justify-content: center;
+}
+
+.footer {
+    width: 102px;
+    height: 102px;
+    margin: 0 20px;
+    padding: 0;
+    background-color: dimgrey
+}
+
+.showbox {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    width: 80%;
+    height: 100%;
+    flex-grow: 1;
+    
+}
+.mainPic {
+    width: 100%;
+    height: 100%;
+}
+
+.footerimage {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    color: white;
+    opacity: 1;
+    margin: 30px 0 15px 30px;
+    padding: 0;
+    font-size: xx-large;
+}
+
+p {
+    color: white;
+    opacity: 1;
+    margin: 0 30px 30px 30px;
+    padding: 0;
+    text-align: justify;
+    font-size: xx-large;
+}
+

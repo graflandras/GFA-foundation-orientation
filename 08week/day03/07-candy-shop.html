@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      font-family: arial;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>Candy shop</title>
+</head>
+
+<body>
+  <h1>🍬Candy shop🍬</h1>
+  <dl class="stats">
+    <dt>Candies</dt>
+    <dd class="candies">0</dd>
+    <dt>Lollypops</dt>
+    <dd class="lollypops"></dd>
+    <dt>Candies / Second</dt>
+    <dd class="speed">0</dd>
+  </dl>
+  <button class="create-candies">Create candies</button>
+  <button class="buy-lollypops">Buy Lollypops</button>
+  <button class="candy-machine">Make candy rain</button>
+  <script>
+
+    /*Gather 10.000 candies!
+    Clicking the ‘Create candies’ button gives you 1 candy.
+    You can buy a lollipop for 100 candies by clicking the ‘Buy lollipop’ button.
+    10 lollipops generate 1 candy per second.
+    Use the 🍭 emoji to display the lollipops you have
+    Display the candy producton rate in the Candies / Second row
+    If you press the "make candy rain" button, the candy generation should speed up 10x*/
+
+    // create candies with button
+    let candieCounter = 0;
+    const createCandie = document.querySelector('button.create-candies');
+    const writeCandie = document.querySelector('dd.candies');
+
+    createCandie.addEventListener('click', event => {
+      candieCounter++;
+      writeCandie.innerText = `${candieCounter}`;
+    });
+
+    //buy lollypop
+    let lollypopCounter = 0;
+    const buyLollypop = document.querySelector('button.buy-lollypops');
+    const writeLollypop = document.querySelector('dd.lollypops');
+    const writeRate = document.querySelector('dd.speed');
+
+    buyLollypop.addEventListener('click', event => {
+
+      if (candieCounter >= 10) {
+        candieCounter -= 10;
+        lollypopCounter++;
+        writeLollypop.innerText += `🍭`;
+        writeCandie.innerText = `${candieCounter}`;
+
+        //lollypop generated candies
+        if (lollypopCounter == 10) {
+          candyRain.disabled = false;
+          setInterval(function () {
+
+            candieCounter += Math.floor(lollypopCounter/10*multiplyer);
+            writeCandie.innerText = `${candieCounter}`;
+            writeRate.innerText = `${Math.floor(lollypopCounter/10)*multiplyer}`;
+          }, 1000);
+        };
+      }
+    });
+    
+    //candy rain
+    const candyRain = document.querySelector('button.candy-machine');
+    let multiplyer = 1;
+    
+    candyRain.disabled = true;
+    candyRain.addEventListener('click', event => {
+      multiplyer = 10;
+      candyRain.disabled = true;
+      writeRate.innerText = `${Math.floor(lollypopCounter/10)*multiplyer}`
+    });
+  </script>
+</body>
+</html>

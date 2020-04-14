@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="2.css" />
+</head>
+
+<body>
+  <div class='container'>
+    <h2 id='title'>ACCOUNT LOGIN</h2>
+    <form class='loginform' action='login-form.html' method="GET">
+      <div class="usernamefield">
+        <label for="username">USERNAME</label>
+        <input id='username' type='text' name="user_name" minlength='5' autofocus required>
+      </div>
+      <div class="passwordfield">
+        <label for="password">PASSWORD</label>
+        <input id='password' type='password' name="password" minlength='5' required>
+        <div id='showpassword'></div>
+      </div>
+      <div id='forgotpassword'>
+        <a href="https://www.youtube.com/watch?v=OGp9P6QvMjY">Forgot Password?</a>
+      </div>
+      <div>
+        <button id='loginbtn'>Login</button>
+      </div>
+    </form>
+  </div>
+  <script src="2.js" defer async></script>
+</body>
+
+</html>

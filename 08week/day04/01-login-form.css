@@ -1,0 +1,71 @@
+.container{
+    margin: 50px auto;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    text-align: flex-start;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 5%;
+  }
+  
+  body div {
+    margin: 25px auto;
+  }
+  
+  .passwordfield, .usernamefield {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  
+  .passwordfield {
+    position: relative;
+    display: flex;
+  }
+  
+  #username, #password {
+    margin: 10px 0;
+  }
+  
+  #username:focus, #password:focus {
+    outline-color: green;
+  }
+  
+  input {
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  #forgotpassword {
+    text-align: end;
+    font-size: 14px;
+  }
+  
+  #forgotpassword a {
+    text-decoration: none;
+  }
+  
+  #loginbtn {
+    color: white;
+    border-radius: 25%;
+    height: 40px;
+    width: 120px;
+    border: none;
+    background-color: #333333;
+  }
+  
+  #showpassword {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0R03Oep1DdepsebMJhsZEtgjxMfhX8bSFHLRbZoSGb3_2HPPV_g) no-repeat center;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 4%;
+    top: 35%;
+    align-self: flex-end;
+    margin: 10px;
+    cursor: pointer;
+  }

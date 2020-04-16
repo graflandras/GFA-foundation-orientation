@@ -1,0 +1,195 @@
+body {
+    background: grey;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+img.headerpic {
+    width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+
+.contentcontainer {
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.mainbar {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    margin: 30px 10px 0 0;
+    flex-direction: column;
+}
+
+.sidebar {
+    display: flex;
+    background-color: grey;
+    width: 50%;
+    height: 80%;
+    margin: 30px 0 0 0;
+    flex-direction: column;
+}
+
+.newpost {
+    display: flex;
+    background-color: darkblue;
+    width: auto;
+    max-height: 60px;
+    height: 60px;
+    margin: 0 0 25px; 0;
+    justify-content: center;
+    align-items: center;    
+}
+.submitnew {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
+.about {
+    display: flex;
+    background-color: orchid;
+    width: auto;
+    height: 60px;
+    max-height: 60px;
+    align-items: center;
+}
+
+
+.aboutarticles {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: auto;
+    height: 300px;
+}
+
+p.abouttext {
+    padding: 0;
+    margin: 0 5px 0 10px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+}
+
+a.aboutpage {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p.aboutheader {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+ul {
+    margin: 20px 0;
+}
+
+li {
+    font-family: 'Lato', sans-serif;
+    margin: 10px 0 0 20px;
+    font-size: 20px;
+}
+
+.posts {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    
+}
+
+.holder {
+    display: flex;
+    height: auto;
+
+}
+
+.votes {
+    display: flex;
+    background-color: white;
+    width: 10%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upvote {
+    height: 25%
+}
+
+.votenum {
+    font-size: 150%;
+    font-weight: bolder;
+    color: darkgrey;
+}
+
+.downvote {
+    height: 25%;
+}
+
+.topics {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+}
+.upvote {
+    margin: 0;
+    padding: 0;
+}
+
+.votenum {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding; 0;
+}
+
+.downvote {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.test {
+    display: flex;
+    font-size: 10px;
+}
+
+.postTimeAndPoster {
+    display: flex;
+}
+
+a.commentNums {
+    
+}

@@ -1,0 +1,43 @@
+body {
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+}
+
+thead {
+    background-color: black;    
+}
+
+th {
+    font-weight: 100;
+    text-align: left;
+    color: white; 
+}
+
+th, td {
+  width: 200px;
+  height: 40px;
+  padding-left: 15px; 
+  border: 1px solid grey;
+  color: grey;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 6px;
+  border-style: hidden;
+  overflow: hidden;
+}
+
+tr>td:nth-child(2)::before {
+    content: "$";
+    padding-right: 5px;
+}
+
+tbody>tr:nth-child(2n)>td:nth-child(n) {
+  background-color: whitesmoke;
+}
+
+tbody>tr:nth-child(2n+1)>td:nth-child(n+1) {
+  background: lightgrey;
+}

@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    background-color: darkblue;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    width: 190px;
+    height: 70px;
+    margin: 30px;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 0;
+}
+
+body>button:nth-child(n) {
+    background-color: grey;
+}
+
+body>button:nth-child(n):hover {
+    background-color: whitesmoke;
+    color: gray;
+}
+
+body>button:nth-child(n):active {
+    background-color: black;
+    color: white;
+}
+
+body>button:nth-child(2n) {
+    background-color: red;
+}
+
+body>button:nth-child(2n):hover {
+    background-color: lightcoral;
+}
+
+body>button:nth-child(2n):active {
+    background-color: darkred;
+}
+
+body>button:nth-child(3n) {
+    background-color: lightblue;
+}
+
+body>button:nth-child(3n):hover {
+    background-color: aliceblue;
+    color: darkgrey;
+}
+
+body>button:nth-child(3n):active {
+    background-color: mediumblue;
+}

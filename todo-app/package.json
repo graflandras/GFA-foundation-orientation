@@ -1,0 +1,22 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "> Write a command-line todo application to easily keep track of your day-to-day tasks.\r > To follow the state of our projects and manage our work, we use so-called Kanban Boards. They usually contain our tasks separated in columns. (todo, doing, review, done)\r > Create a Kanban Board for yourself and add the stories that need to be done. \r > Later on, update your board so you can always see your project's state and your next steps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/controllhu/todo-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/controllhu/todo-app/issues"
+  },
+  "homepage": "https://github.com/controllhu/todo-app#readme",
+  "dependencies": {
+    "@types/node": "^10.12.10"
+  }
+}

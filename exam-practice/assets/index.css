@@ -1,0 +1,23 @@
+body {
+  background-color: aqua;
+}
+
+container {
+  display: flex;
+  flex-direction: column;
+}
+
+shortenerdiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.shortenerform {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutshortenedform {
+  display: flex;
+  flex-direction: column;
+}

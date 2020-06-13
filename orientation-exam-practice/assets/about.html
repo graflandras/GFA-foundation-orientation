@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../assets/about.css"> <!-- ../assets/about.css azért kell, mert az endpointon /about-ról van kiszolgálva az oldal, és ezért alapesetben a /about/about.css-t keresné -->
+  <title>About your URL</title>
+</head>
+<body>
+  <h1>About</h1>
+  <div class="table">
+    <table>
+    </table>
+  </div>
+  <div>
+    <p>Actions</p>
+    <select>
+        <option value="" disabled selected hidden>Select your option</option>
+        <option value="modifyAlias">Modify alias</option>
+        <option value="modifyUrl">Modify url</option>
+        <option value="deleteRecord">Delete</option>
+        <option value="redirectToUrl">Redirect to original URL</option>
+      </select>
+  </div>
+  <div class="dinamic">
+    
+  </div>
+  <script src="../assets/about.js"></script>
+</body>
+</html>
